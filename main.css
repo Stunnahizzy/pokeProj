@@ -1,3 +1,59 @@
 body {
-  background: #fff ;
+  background: #eee6e6;
+  text-align: center;
+}
+
+#page2 {
+  /* display: none; */
+
+}
+
+#poke-bars {
+  display: grid;
+  grid-template: 30% 30% 30% / 30% 30% 30%;
+}
+
+#navBar {
+  /* display: inline-flex; */
+  /* grid-template: 30% / 30% 30% 30%; */
+  list-style-type: none;
+  background-color: black;
+  border-style: solid;
+}
+
+#poke-li {
+  display: grid;
+  text-align: center;
+  margin: 1%;
+  padding: 1%;
+  list-style-type: none;
+  grid-template: 30% / 30% 30% 30%;
+  grid-gap: 5%;
+  background-color: yellow;
+  border-style: ridge;
+  border-color: black;
+}
+
+.pokeball-div {
+  display: grid;
+  grid-template: 50% / 78% 20% 20%;
+}
+#pokeball {
+  justify-content: center;
+  animation-name: pokeball-spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pokeball-spin {
+    from {
+      transform: rotateY(0deg);
+    } to {
+      transform: rotate(360deg);
+    }
+}
+
+.generator {
+  grid-template: 30% 30% 30% / 30% 30% 30%;
+  justify-content: center;
 }
